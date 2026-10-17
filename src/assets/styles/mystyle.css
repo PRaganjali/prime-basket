@@ -1,0 +1,325 @@
+.header-part{
+    border: none;
+    background: #1C2B4B;
+    width:98%;
+    height:15vh;
+    display: flex;
+    border:1px solid #0a0e32;
+    border-radius: 10px;
+    margin: 10px;
+    .logo,.search,.btns{
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 25%;
+        cursor:pointer;
+    }
+    .search{
+        width: 50%;
+        input , button{
+            font-size: large;
+            padding: 2vh 1vw;
+            border: none;
+        }
+        input{
+            width: 35vw;
+            border-radius: 10vh 0 0 10vh;
+        }
+        button{
+            border-radius: 0 10vh 10vh 0;
+            cursor: pointer;
+            &:hover{
+                background-color: #1C2B4B;
+                color: white;
+            }
+        }
+    }
+    .btns{
+        width: 25%;
+        button{
+            border: none;
+            font-size: large;
+            margin: 0 1vw;
+            padding: 1.5vh 1vw;
+            cursor: pointer;
+            background: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .login,.cart{
+            border: solid 1px whitesmoke;
+            color: whitesmoke;
+            cursor: pointer;
+            &:hover{
+                background-color: whitesmoke;
+                color: #1C2B4B;
+            }
+        }
+    }
+    
+}
+body{
+    background: #ffd08a;
+}
+/*================== design for landing  ===============*/
+.products{
+    .container{
+        background-color: #1C2B4B;
+        padding: 50px 0px;
+        margin: 5vh auto;
+        display: flex;
+        justify-content: space-evenly;
+        row-gap: 3vw;
+        column-gap: 2vw;    
+        flex-wrap: wrap; /*use only pixels for height & width in flew-wrap*/
+        .card{
+            border: 1px solid rgb(7, 7, 63);
+            border-radius: 5px;
+            /* height: 300px; no need to give height automatically
+            it will take height or else it align outside the box also*/
+            width: 250px;
+            text-align: center;
+            padding: 2vh 1vw;
+            background-color: #E8ECEF;
+            .image{
+                img{
+                    width: 60%;
+                    height: 150px;
+                }
+            }
+            .title{
+                    font-weight: bold;
+                    font-size: large;
+                    margin: 2vh 0;
+                    text-align: left;
+                    color: #1C2B4B;
+            }
+            button{
+                margin: 4vh 0;
+                padding: 1vw 1vw ;
+                font-size: 15px;
+                border: 1px solid rgb(4, 4, 50);
+                border-radius: 25px;
+                color: whitesmoke;
+                background-color: rgb(4, 4, 50);
+                /* box-shadow: ; */
+                &:hover{
+                    cursor: pointer;
+                   color: rgb(4, 4, 50);
+                    background-color: whitesmoke;
+                     transition: 0.3s;
+                    transform: scale(1.1);
+                }
+            }
+            &:hover{
+                    cursor: pointer;
+                    background-color: rgb(202, 202, 202);
+                    transition: 0.2s;
+                    transform: scale(1.1);
+            }
+            
+        }
+    }
+}
+.category{
+    width: 100%;
+    margin: 20px 0;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        background: #fda31d;
+        color: #1C2B4B;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            color: azure;
+        }
+    }
+
+}
+/*================== design for view more components  ===============*/
+.viewmore-card{
+    .container{
+        width: min(950px, 92%);
+    min-height: 400px;
+    margin: 56px auto;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    position: relative;
+    background: #fffaf3;
+    border: 1px solid #f3d4a8;
+    border-radius: 22px;
+    box-shadow: 0 14px 38px rgba(90, 61, 24, 0.12);
+            .left{
+                 width: 40%;
+    min-width: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 16px;    
+                 img{
+                    width: 100%;
+    max-width: 270px;
+    height: 270px;
+    margin: 0;
+    object-fit: contain;
+    cursor: zoom-in;
+    transition: transform 0.25s ease;
+                    &:hover{
+                            transform: scale(1.04);
+                    }
+                 }   
+            }
+            .v-line{
+               align-self: stretch;
+    width: 1px;
+    height: auto;
+    margin: 0;
+    border: 0;
+    background: #e5cda9;
+            }
+            .right{
+                width: 60%;
+    min-width: 0;
+    padding: 8px 4px;
+                p{
+                    margin: 14px 0;
+    color: #34415c;
+    line-height: 1.7;
+                }
+                .close{
+                    display: block;
+    margin: 0 0 12px 450px;
+    padding: 6px 9px;
+    border: 0;
+    border-radius: 8px;
+    background: #f3e5d1;
+    color: #1C2B4B;
+    cursor: pointer;
+    &:hover{
+        background: #1C2B4B;
+    color: #fff;
+    }
+                }
+                .btns{
+                    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-top: 18px;
+                    .cart, .dlt{
+                        display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 11px 18px;
+    border: 1px solid #1C2B4B;
+    border-radius: 24px;
+    background: #1C2B4B;
+    color: #fff;
+    font-size: 0.92rem;
+    cursor: pointer;
+                        &:hover{
+                            background: #f3e5d1;
+    border-color: #f3e5d1;
+    color: rgb(7, 7, 37);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+/* =====================cart items=========== */
+.cart-container{
+    h1{
+        text-align: center;
+        color: rgb(7, 7, 53);
+        /* margin-top: 20px; */
+        color: #ef9714;
+    }
+    .exitToHomePage{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 20px 20vh 0px 160vh;
+        padding: 5px 10px;
+        border: 1px solid rgb(255, 161, 19);
+        &:hover{
+            background-color: rgb(255, 161, 19);
+            color: white;
+        }
+    }
+    table{
+        margin: 40px 50px 20px 120px;
+        border: 1px solid rgb(248, 193, 120);
+        border-radius: 25px;
+        th{
+            padding: 5px 10px;
+            background-color: rgb(255, 185, 87);
+        }
+        tbody{
+                tr:nth-child(even){
+                    background-color: rgb(255, 250, 243);
+                }
+            }
+        tr{
+            padding: 10px;
+            td{
+                padding: 10px;
+                button{
+                        border: 1px solid rgb(195, 115, 10);
+                        padding: 6px 15px;
+                        background-color: rgb(248, 193, 120);
+                        color: black;
+                        border-radius: 10px;
+                        font-size: 15px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: white;
+                        }
+                }
+            }
+        }
+    }
+}
+/* =========================page not found======================== */
+.pagenotfound-style{
+    background-color: #0a0e32;
+    /* position: relative; */
+    height: 85vh;
+    img{
+        /* position: absolute; */
+        height: 350px;
+        width: 500px;
+        margin-top: 75px;
+        margin-left: 400px;
+        border-radius: 25px;
+    }
+}
+
+/* original api: https://fakestoreapi.com/products?utm_source=chatgpt.com */
